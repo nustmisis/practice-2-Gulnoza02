@@ -40,3 +40,29 @@ else:
 е)  Python содержит инструмент тар (функция, список), который также способен генерировать список степеней 2:. Каким образом можно его задать ? 
     
 '''
+# a) Удалим флаг found  и финальный if-else блок:
+L=[1, 2, 4, 8, 16, 32, 64]
+X= 5
+i= 0
+while i < len (L):
+    if 2** X ==L[i]:
+        print('at index', i)
+        break
+    i +=  1
+else:
+ print(X, 'not found')
+ # б) Перепишем код с использованием цикла for и конструкции else:
+ L=[1, 2, 4, 8, 16, 32, 64]
+ X=5
+ for i, value  in enumerate(L):
+     if 2** X ==  value:
+         print ('at index', i )
+         break
+     else:
+         print( X, 'not found')
+         
+
+
+
+
+
