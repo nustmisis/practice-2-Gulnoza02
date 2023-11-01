@@ -21,7 +21,35 @@
 только годами из приведенной таблицы, а должна корректно обрабатывать все годы нашей эры.
 """
 
-year = input()
+year =int(input("Введите год рождения: "))
+animal_number = (year-2000) % 12
+#Отнимая 2000 от года рождения мы выравниваем его относительно начала 12-лнтнего цикла
+#Определяем название  животного
+# вычесляем номе    
+if animal_number ==0:
+    animal= "Дракон"
+elif animal_number ==1:
+    animal="Змея"
+elif animal_number ==2:
+    animal="Лощадь"
+elif animal_number ==3:
+    animal="Коза"
+elif animal_number ==4:
+    animal="Обезьяна"
+elif animal_number ==5:
+    animal="Петух"
+elif animal_number ==6:
+    animal="Собака"
+elif animal_number ==7:
+    animal="Свиня"
+elif animal_number ==8:
+    animal="Крыса"
+elif animal_number ==9:
+    animal="Бык"
+elif animal_number ==10:
+    animal="тигр"
+else:
+    animal="Кролик"
 
 
-print() #Животное
+print(animal) #Животное
