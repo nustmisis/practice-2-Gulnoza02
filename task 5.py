@@ -55,4 +55,4 @@ def count_moves(s, c):
             return moves 
         input_str, target_char = input().split()
         moves_required = count_moves(input_str, target_char)
-print ( moves_required )
+print (" moves_required" )
